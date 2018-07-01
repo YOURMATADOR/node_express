@@ -1,6 +1,6 @@
 const express = require('express');
 const hbs = require('hbs');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 let app = express();
 
 
@@ -14,10 +14,7 @@ hbs.registerHelper('suma',(a,b)=>{
 
 app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));
-app.use((re, res, next) => {
 
-    res.render('defaults/mantenimiento.hbs');
-})
 
 app.get('/', (req,res)=>{
 
@@ -42,6 +39,6 @@ res.render('about.hbs',{
 
 
 app.listen(port, () => {
-    console.log('App listening on port 3000!');
+    console.log('App listening on port ',port);
 });
 
