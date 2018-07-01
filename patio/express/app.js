@@ -16,9 +16,9 @@ app.set('view engine', 'hbs');
 app.use(express.static(__dirname + '/public'));
 
 
-app.get('/', (req,res)=>{
+app.get('/home', (req,res)=>{
 
-res.send('Hola mundo');
+res.render('home.hbs');
 
 });
 
