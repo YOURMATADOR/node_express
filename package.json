@@ -4,7 +4,8 @@
   "description": "Practicas de node.js",
   "main": "sistemaA.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node patio/express/app.js"
   },
   "author": "Eduardo Avila",
   "license": "ISC",
